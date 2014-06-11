@@ -16,4 +16,4 @@ EXPOSE 8000
 WORKDIR /usr/src/app/app
 # replace this with your main "server" script file
 
-CMD [ "node", "../server.js 8000 0.0.0.0" ]
+CMD [ "node", "../server.js", "8000", "0.0.0.0" ]
