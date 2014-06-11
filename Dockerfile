@@ -14,4 +14,4 @@ RUN npm install
 EXPOSE 8000
 
 # replace this with your main "server" script file
-CMD [ "node", "server.js" ]
+CMD [ "node", "server.js 8000 0.0.0.0" ]
