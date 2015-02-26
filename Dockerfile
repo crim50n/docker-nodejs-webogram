@@ -1,9 +1,9 @@
-FROM node
+FROM node:latest
 
 WORKDIR /usr/src/app
 
 ADD https://github.com/zhukov/webogram/archive/master.zip /usr/src/master.zip
-RUN apt-get install unzip
+RUN apt-get update && apt-get dist-upgrade -yq && apt-get install unzip -yq
 RUN unzip /usr/src/master.zip -d /usr/src
 RUN rm -fr /usr/src/app && mv /usr/src/webogram-master /usr/src/app
 
