@@ -11,7 +11,7 @@ ADD start.sh /usr/src/app/start.sh
 RUN chmod +x /usr/src/app/start.sh
 
 # install your application's dependencies
-RUN npm install
+RUN npm install -g gulp && npm install
 
 # replace this with your application's default port
 EXPOSE 8000
