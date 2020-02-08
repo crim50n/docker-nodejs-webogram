@@ -18,4 +18,6 @@ EXPOSE 8000
 
 # replace this with your main "server" script file
 
+# update 1
+
 CMD [ "/usr/src/app/start.sh" ]
